@@ -1,6 +1,7 @@
 package com.valorantjay.wondercraft.core.init;
 
 import com.valorantjay.wondercraft.WonderCraft;
+import com.valorantjay.wondercraft.common.block.DisplayCaseBlock;
 import com.valorantjay.wondercraft.common.block.QuarryBlock;
 
 import net.minecraft.block.AbstractBlock;
@@ -28,4 +29,6 @@ public class BlockInit {
 			() -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE).harvestLevel(2)));
 	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry",
 			() -> new QuarryBlock());
+	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("display_case",
+			() -> new DisplayCaseBlock());
 }

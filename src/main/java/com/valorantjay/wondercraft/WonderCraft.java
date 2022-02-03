@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.valorantjay.wondercraft.core.init.BlockInit;
+import com.valorantjay.wondercraft.core.init.ContainerTypesInit;
 import com.valorantjay.wondercraft.core.init.FeatureInit;
 import com.valorantjay.wondercraft.core.init.ItemInit;
 import com.valorantjay.wondercraft.core.init.TileEntityTypesInit;
@@ -26,6 +27,7 @@ public class WonderCraft {
 		
 		ItemInit.ITEMS.register(bus);
 		TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
+		ContainerTypesInit.CONTAINER_TYPES.register(bus);
 		BlockInit.BLOCKS.register(bus);
 
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);

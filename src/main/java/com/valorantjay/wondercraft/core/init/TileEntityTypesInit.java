@@ -1,6 +1,7 @@
 package com.valorantjay.wondercraft.core.init;
 
 import com.valorantjay.wondercraft.WonderCraft;
+import com.valorantjay.wondercraft.common.te.DisplayCaseTileEntity;
 import com.valorantjay.wondercraft.common.te.QuarryTileEntity;
 
 import net.minecraft.tileentity.TileEntityType;
@@ -13,5 +14,9 @@ public class TileEntityTypesInit {
 			.create(ForgeRegistries.TILE_ENTITIES, WonderCraft.MOD_ID);
 
 	public static final RegistryObject<TileEntityType<QuarryTileEntity>> QUARRY_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
-			.register("quarry", () -> TileEntityType.Builder.create(QuarryTileEntity::new, BlockInit.QUARRY.get()).build(null));
+			.register("quarry",
+					() -> TileEntityType.Builder.create(QuarryTileEntity::new, BlockInit.QUARRY.get()).build(null));
+	public static final RegistryObject<TileEntityType<DisplayCaseTileEntity>> DISPLAY_CASE_TILE_ENTITY_TYPE = TILE_ENTITY_TYPE
+			.register("display_case", () -> TileEntityType.Builder
+					.create(DisplayCaseTileEntity::new, BlockInit.DISPLAY_CASE.get()).build(null));
 }
