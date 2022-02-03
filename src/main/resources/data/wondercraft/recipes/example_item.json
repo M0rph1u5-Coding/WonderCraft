@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "wondercraft:example_block"
+		},
+		{
+			"item": "wondercraft:example_block"
+		},
+		{
+			"item": "wondercraft:example_block"
+		},
+		{
+			"item": "wondercraft:example_block"
+		}
+	],
+	"result": {
+		"item": "wondercraft:example_item",
+		"count": 16
+	}
+}

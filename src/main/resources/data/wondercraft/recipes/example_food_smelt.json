@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "wondercraft:example_item"
+	},
+	"result": {
+		"item": "wondercraft:example_food",
+		"count": 1
+	}
+}

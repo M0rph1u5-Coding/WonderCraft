@@ -1,0 +1,12 @@
+{
+	"item.wondercraft.example_item": "Example Item",
+	"item.wondercraft.underite_ingot": "Underite Ingot",
+	"block.wondercraft.example_block": "Example Block",
+	"item.wondercraft.example_food": "Example Food",
+	"block.wondercraft.example_ore": "Example Ore",
+	"block.wondercraft.underite_ore": "Underite Ore",
+	
+	"itemGroup.wonder_craft_blocks": "WonderCraft Blocks",
+	"itemGroup.wonder_craft_items": "WonderCraft Items",
+	"itemGroup.wonder_craft_foods": "WonderCraft Foods"
+}
