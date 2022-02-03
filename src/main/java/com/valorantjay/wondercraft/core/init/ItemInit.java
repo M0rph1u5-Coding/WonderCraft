@@ -35,4 +35,7 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> UNDERITE_ORE = ITEMS.register("underite_ore",
 			() -> new BlockItem(BlockInit.UNDERITE_ORE.get(),
 					new Item.Properties().group(WonderCraftBlocksItemGroup.WONDER_CRAFT_BLOCKS)));
+	public static final RegistryObject<BlockItem> QUARRRY = ITEMS.register("",
+			() -> new BlockItem(BlockInit.QUARRY.get(),
+					new Item.Properties().group(WonderCraftBlocksItemGroup.WONDER_CRAFT_BLOCKS)));
 }

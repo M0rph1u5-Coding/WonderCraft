@@ -1,6 +1,7 @@
 package com.valorantjay.wondercraft.core.init;
 
 import com.valorantjay.wondercraft.WonderCraft;
+import com.valorantjay.wondercraft.common.block.QuarryBlock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -25,4 +26,6 @@ public class BlockInit {
 			() -> new Block(AbstractBlock.Properties.from(Blocks.DIAMOND_ORE).harvestLevel(3)));
 	public static final RegistryObject<Block> UNDERITE_ORE = BLOCKS.register("underite_ore",
 			() -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE).harvestLevel(2)));
+	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry",
+			() -> new QuarryBlock());
 }
