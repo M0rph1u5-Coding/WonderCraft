@@ -12,7 +12,4 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ContainerTypesInit {
 	public static final DeferredRegister<ContainerType<?>> CONTAINER_TYPES = DeferredRegister
 			.create(ForgeRegistries.CONTAINERS, WonderCraft.MOD_ID);
-
-	public static final RegistryObject<ContainerType<DisplayCaseContainer>> DISPLAY_CASE_CONTAINER_TYPE = CONTAINER_TYPES
-			.register("display_case", () -> IForgeContainerType.create(DisplayCaseContainer::new));
 }

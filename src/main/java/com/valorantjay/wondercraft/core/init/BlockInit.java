@@ -29,6 +29,4 @@ public class BlockInit {
 			() -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE).harvestLevel(2)));
 	public static final RegistryObject<Block> QUARRY = BLOCKS.register("quarry",
 			() -> new QuarryBlock());
-	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("display_case",
-			() -> new DisplayCaseBlock());
 }

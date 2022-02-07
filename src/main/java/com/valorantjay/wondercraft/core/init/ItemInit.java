@@ -38,7 +38,4 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> QUARRY = ITEMS.register("quarry",
 			() -> new BlockItem(BlockInit.QUARRY.get(),
 					new Item.Properties().group(WonderCraftBlocksItemGroup.WONDER_CRAFT_BLOCKS)));
-	public static final RegistryObject<BlockItem> DISPLAY_CASE = ITEMS.register("display_case",
-			() -> new BlockItem(BlockInit.DISPLAY_CASE.get(),
-					new Item.Properties().group(WonderCraftBlocksItemGroup.WONDER_CRAFT_BLOCKS)));
 }
