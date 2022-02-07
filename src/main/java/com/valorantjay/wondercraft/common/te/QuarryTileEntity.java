@@ -19,7 +19,9 @@ public class QuarryTileEntity extends TileEntity implements ITickableTileEntity{
 
 	@Override
 	public void tick() {
-		this.world.setBlockState(this.pos.down(), Blocks.AIR.getDefaultState());
+		if (this.world.getBlockState(this.pos.down()) == Blocks.BEDROCK.getDefaultState()) {
+			this.world.setBlockState(this.pos.down(), Blocks.AIR.getDefaultState());
+		}
 	}
 
 }

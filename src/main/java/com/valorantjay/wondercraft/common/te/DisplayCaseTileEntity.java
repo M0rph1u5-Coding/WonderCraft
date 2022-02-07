@@ -39,6 +39,10 @@ public class DisplayCaseTileEntity extends LockableLootTileEntity{
 	protected NonNullList<ItemStack> getItems() {
 		return this.items;
 	}
+	
+	public ItemStack getItem() {
+		return this.items.get(0);
+	}
 
 	@Override
 	protected void setItems(NonNullList<ItemStack> itemsIn) {
