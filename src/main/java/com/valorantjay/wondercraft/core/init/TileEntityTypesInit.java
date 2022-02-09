@@ -1,7 +1,6 @@
 package com.valorantjay.wondercraft.core.init;
 
 import com.valorantjay.wondercraft.WonderCraft;
-import com.valorantjay.wondercraft.common.te.DisplayCaseTileEntity;
 import com.valorantjay.wondercraft.common.te.QuarryTileEntity;
 
 import net.minecraft.tileentity.TileEntityType;

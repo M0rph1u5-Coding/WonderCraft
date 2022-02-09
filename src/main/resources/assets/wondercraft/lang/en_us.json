@@ -6,7 +6,19 @@
 	"block.wondercraft.example_ore": "Example Ore",
 	"block.wondercraft.underite_ore": "Underite Ore",
 	"block.wondercraft.quarry": "Quarry",
-	"block.wondercraft.display_case": "Display Case",
+	
+	
+	"item.wondercraft.underite_helmet": "Underite Helmet",
+	"item.wondercraft.underite_chestplate": "Underite Chestplate",
+	"item.wondercraft.underite_leggings": "Underite Leggings",
+	"item.wondercraft.underite_boots": "Underite Boots",
+	
+	"item.wondercraft.underite_pickaxe": "Underite Pickaxe",
+	"item.wondercraft.underite_axe": "Underite Axe",
+	"item.wondercraft.underite_shovel": "Underite Shovel",
+	"item.wondercraft.underite_hoe": "Underite Hoe",
+	"item.wondercraft.underite_sword": "Underite Sword",
+	
 	
 	"itemGroup.wonder_craft_blocks": "WonderCraft Blocks",
 	"itemGroup.wonder_craft_items": "WonderCraft Items",

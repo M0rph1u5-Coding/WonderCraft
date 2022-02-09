@@ -1,7 +1,6 @@
 package com.valorantjay.wondercraft.core.init;
 
 import com.valorantjay.wondercraft.WonderCraft;
-import com.valorantjay.wondercraft.common.block.DisplayCaseBlock;
 import com.valorantjay.wondercraft.common.block.QuarryBlock;
 
 import net.minecraft.block.AbstractBlock;
