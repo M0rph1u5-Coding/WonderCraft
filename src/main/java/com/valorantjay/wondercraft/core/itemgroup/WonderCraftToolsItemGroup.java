@@ -1,6 +1,6 @@
 package com.valorantjay.wondercraft.core.itemgroup;
 
-import com.valorantjay.wondercraft.core.init.BlockInit;
+import com.valorantjay.wondercraft.core.init.ItemInit;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,7 +16,7 @@ public class WonderCraftToolsItemGroup extends ItemGroup {
 
 	@Override
 	public ItemStack createIcon() {
-		return new ItemStack(BlockInit.EXAMPLE_BLOCK.get());
+		return new ItemStack(ItemInit.UNDERITE_AXE.get());
 	}
 
 }
