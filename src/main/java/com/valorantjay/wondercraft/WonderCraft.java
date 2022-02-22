@@ -8,12 +8,14 @@ import com.valorantjay.wondercraft.core.init.ContainerTypesInit;
 import com.valorantjay.wondercraft.core.init.FeatureInit;
 import com.valorantjay.wondercraft.core.init.ItemInit;
 import com.valorantjay.wondercraft.core.init.TileEntityTypesInit;
+import com.valorantjay.wondercraft.core.network.TestNetwork;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("wondercraft")
@@ -24,7 +26,9 @@ public class WonderCraft {
 
 	public WonderCraft() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		
+
+		bus.addListener(this::commonSetup);
+
 		ItemInit.ITEMS.register(bus);
 		TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
 		ContainerTypesInit.CONTAINER_TYPES.register(bus);
@@ -32,5 +36,9 @@ public class WonderCraft {
 
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);
+	}
+
+	public void commonSetup(final FMLCommonSetupEvent event) {
+		TestNetwork.init();
 	}
 }

@@ -2,6 +2,8 @@ package com.valorantjay.wondercraft.common.events;
 
 import com.valorantjay.wondercraft.WonderCraft;
 import com.valorantjay.wondercraft.core.init.KeybindsInit;
+import com.valorantjay.wondercraft.core.network.TestNetwork;
+import com.valorantjay.wondercraft.core.network.message.InputMessage;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,7 +31,7 @@ public class InputEvents {
 	
 	private static void onInput(Minecraft mc, int key, int action) {
 		if (mc.currentScreen == null && KeybindsInit.exampleKey.isPressed()) {
-			System.out.println("EXAMPLE KEY PRESSED");
+			TestNetwork.CHANNEL.sendToServer(new InputMessage(key));
 		}
 	}
 }
